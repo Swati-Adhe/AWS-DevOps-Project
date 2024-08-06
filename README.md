@@ -2,9 +2,9 @@
 
 Welcome to the AWS Projects repository. This repository contains various projects that demonstrate my skills and expertise in using Amazon Web Services (AWS). Each project is designed to highlight specific AWS services and how they can be utilized to build, deploy, and manage applications and infrastructure.
 
-## Projects
+## Future Projects
 
-This repository will include a variety of projects focusing on different AWS services and use cases. Some of the areas covered will be:
+This repository will be regularly updated with new projects focusing on different AWS services and use cases, including:
 
 - **Compute**: Using services like EC2, Lambda, and more.
 - **Storage**: Implementing solutions with S3, EFS, etc.
