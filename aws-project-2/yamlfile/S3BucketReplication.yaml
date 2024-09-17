@@ -1,0 +1,13 @@
+Resources:
+  S3Bucket:
+    Type: AWS::S3::Bucket
+  S3BucketReplication:
+    Type: AWS::S3::BucketPolicy
+    Properties:
+      Bucket: !Ref S3Bucket
+      PolicyDocument:
+        Statement:
+          - Action: "s3:ReplicateObject"
+            Resource: "*"
+            Effect: "Allow"
+            Principal: "*"

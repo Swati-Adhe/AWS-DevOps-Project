@@ -1,0 +1,12 @@
+Resources:
+  # Create an ECR repository to store Docker images
+  MyECRRepository:
+    Type: AWS::ECR::Repository
+    Properties:
+      RepositoryName: "my-app-repository"
+  
+  # ECS Cluster to run the containers
+  ECSCluster:
+    Type: AWS::ECS::Cluster
+    Properties:
+      ClusterName: "my-app-cluster"

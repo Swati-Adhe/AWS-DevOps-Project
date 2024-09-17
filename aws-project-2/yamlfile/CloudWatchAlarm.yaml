@@ -1,0 +1,19 @@
+Resources:
+  MySNS:
+    Type: AWS::SNS::Topic
+    Properties:
+      TopicName: "MySNSTopic"
+
+  CloudWatchAlarm:
+    Type: AWS::CloudWatch::Alarm
+    Properties:
+      AlarmName: "HighCPUAlarm"
+      MetricName: "CPUUtilization"
+      Namespace: "AWS/ECS"
+      Statistic: Average
+      Period: 300
+      EvaluationPeriods: 1
+      Threshold: 80
+      ComparisonOperator: GreaterThanThreshold
+      AlarmActions:
+        - Ref: MySNS

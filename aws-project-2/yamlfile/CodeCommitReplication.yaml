@@ -1,0 +1,5 @@
+Resources:
+  CodeCommitReplication:
+    Type: AWS::CodeCommit::Repository
+    Properties:
+      RepositoryName: "my-repo-replica"

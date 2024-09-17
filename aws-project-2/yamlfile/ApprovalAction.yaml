@@ -1,0 +1,17 @@
+Resources:
+  ApprovalAction:
+    Type: AWS::CodePipeline::Pipeline
+    Properties:
+      RoleArn: arn:aws:iam::891612578515:role/MyCodePipelineStack-CodePipelineServiceRole-H7vVXrWihuuL
+      ArtifactStore:
+        Type: S3
+        Location: mycodepipelinestack-artifactbucket-19cjoretxj5a
+      Stages:
+        - Name: Approval
+          Actions:
+            - Name: ManualApproval
+              ActionTypeId:
+                Category: Approval
+                Owner: AWS
+                Provider: Manual
+                Version: "1"
